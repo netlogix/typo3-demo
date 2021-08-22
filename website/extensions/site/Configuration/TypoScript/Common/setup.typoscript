@@ -1,0 +1,10 @@
+#####################################
+# Content Elements (fluid_styled_content)
+#####################################
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+
+#####################################
+# PAGE / Config
+#####################################
+@import 'EXT:site/Configuration/TypoScript/Common/Config/'
+@import 'EXT:site/Configuration/TypoScript/Common/Page/'

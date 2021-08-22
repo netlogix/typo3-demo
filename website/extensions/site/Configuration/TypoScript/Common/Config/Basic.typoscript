@@ -1,0 +1,14 @@
+#####################################
+# Config
+#####################################
+config {
+    doctype = html5
+    admPanel = 0
+
+    # Compression
+    compressCss = 0
+    concatenateCss = 0
+    compressJs = 0
+    concatenateJs = 0
+    compressHtml = 0
+}

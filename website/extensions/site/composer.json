@@ -1,0 +1,18 @@
+{
+  "name": "netlogix/site",
+  "type": "typo3-cms-extension",
+  "description": "",
+  "require": {
+    "typo3/cms-core": ">=11.3.0,<12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "netlogix\\site\\": "Classes"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "site"
+    }
+  }
+}

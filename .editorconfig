@@ -1,0 +1,22 @@
+##############################################################################
+# This file is not to be deployed but contains editor configuration for files
+# in this package. For the .editorconfig file to be deployed, see the one in
+# the "Editorconfig" folder.
+##############################################################################
+
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+tab_width = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[composer.json]
+indent_size = 2
+
+[*.yml]
+indent_size = 2

@@ -1,0 +1,59 @@
+#####################################
+# Page Config
+#####################################
+page = PAGE
+page {
+
+    meta {
+        X-UA-Compatible = IE=edge
+        X-UA-Compatible.attribute = http-equiv
+        viewport = width=device-width,initial-scale=1
+    }
+
+    10 = FLUIDTEMPLATE
+    10 {
+        layoutRootPaths {
+            10 = EXT:site/Resources/Private/Templates/Page/Layouts/
+        }
+
+        partialRootPaths {
+            10 = EXT:site/Resources/Private/Templates/Page/Partials/
+        }
+
+        templateRootPaths {
+            10 = EXT:site/Resources/Private/Templates/Page/Templates/
+        }
+
+        templateName = TEXT
+        templateName.stdWrap {
+            cObject = CASE
+            cObject {
+                key.field = doktype
+
+                default = TEXT
+                default.value = Default
+            }
+        }
+
+        dataProcessing {
+
+        }
+
+        settings {
+            
+        }
+
+        variables {
+            content < styles.content.get
+            content {
+                select {
+                    includeRecordsWithoutDefaultTranslation = 1
+                }
+            }
+        }
+    }
+}
+
+// Enforce distinct frontend rendering if user has backend cookie
+[backend.user.isLoggedIn]
+[GLOBAL]
