@@ -3,12 +3,10 @@
   "description": "TYPO3 CMS Base Distribution",
   "license": "GPL-2.0-or-later",
   "config": {
-    "platform": {
-      "php": "7.4.1"
-    },
     "sort-packages": true
   },
   "require": {
+    "php": "^7.4",
     "helhum/dotenv-connector": "^3.0",
     "helhum/typo3-console": "^6.6",
     "netlogix/site": "@dev",
